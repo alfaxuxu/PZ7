@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетплейс электроники</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Стили сайта -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="container-fluid py-3">
+        <div class="row g-2">
+            <!-- Логотип -->
+            <div class="col-6 col-md-auto ">
+                <a href="index.html" class="logo-link">
+                    <img src="./assets/img/Logo.png" width="150" alt="Логотип">
+                </a>
+            </div>
+
+            <!-- Кнопки избранное, корзина, аккаунт - скрыты на десктопе, видны на мобильных-->
+            <div class="col-6 col-md-auto d-md-none d-flex justify-content-end">
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-heart"></i>
+                </a>
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-bag"></i>
+                </a>
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </div>
+
+            <!-- Каталог и поиск -->
+            <div class="dropdown col-12 col-md d-flex">
+                <!-- Кнопка каталога с бургер-меню -->
+                <button id="menuToggle" class="catalog-btn btn btn-primary d-flex align-items-center gap-2 me-3"
+                    data-bs-toggle="dropdown">
+                    <div class="hamburger-icon d-flex flex-column me-1">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </div>
+                    <span>Каталог</span>
+                </button>
+
+                <!-- Выпадающее меню каталога -->
+                <ul class="dropdown-menu">
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-phone me-3"></i>Смартфоны</a></li>
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-tablet me-3"></i>Планшеты</a></li>
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-laptop me-3"></i>Ноутбуки</a></li>
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a></li>
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-headset me-3"></i>Периферия</a></li>
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-controller me-3"></i>Для геймеров</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <!-- Дополнительные ссылки -->
+                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-stars me-3"></i>Отзывы</a></li>
+                    <li><a href="faq.html" class="sidebar-link"><i class="bi bi-patch-question me-3"></i>FAQ</a></li>
+                    <li><a href="contacts.html" class="sidebar-link"><i class="bi bi-card-list me-3"></i>Контакты</a>
+                    </li>
+                </ul>
+
+                <!-- Поле поиска -->
+                <div class="input-group w-100">
+                    <input type="search" class="form-control" placeholder="Найти...">
+                    <button class="btn btn-outline-secondary " type="button"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+
+            <!-- Кнопки избранное, корзина, аккаунт - скрыты на мобильных, видны на десктопе -->
+            <div class="col-md-auto d-none d-md-flex">
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-heart"></i>
+                </a>
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-bag"></i>
+                </a>
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Основной контент страницы -->
+    </main>
+
+    <footer>
+        <!-- Футер -->
+    </footer>
+
+    <!-- Кнопка прокрутки наверх -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">↑</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Собственные скрипты -->
+    <script src="./assets/scripts/menu.js"></script>
+
+</body>
+</html>
