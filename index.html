@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <header class="container-fluid py-3">
+    <header class="container-fluid py-3 mb-4">
         <div class="row g-2">
             <!-- Логотип -->
             <div class="col-6 col-md-auto ">
-                <a href="index.html" class="logo-link">
+                <a href="./index.html" class="logo-link">
                     <img src="./assets/img/Logo.png" width="150" alt="Логотип">
                 </a>
             </div>
@@ -51,20 +51,20 @@
 
                 <!-- Выпадающее меню каталога -->
                 <ul class="dropdown-menu">
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-phone me-3"></i>Смартфоны</a></li>
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-tablet me-3"></i>Планшеты</a></li>
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-laptop me-3"></i>Ноутбуки</a></li>
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a></li>
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-headset me-3"></i>Периферия</a></li>
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-controller me-3"></i>Для геймеров</a>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-phone me-3"></i>Смартфоны</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-tablet me-3"></i>Планшеты</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-laptop me-3"></i>Ноутбуки</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-headset me-3"></i>Периферия</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-controller me-3"></i>Для геймеров</a>
                     </li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
                     <!-- Дополнительные ссылки -->
-                    <li><a href="404.html" class="sidebar-link"><i class="bi bi-stars me-3"></i>Отзывы</a></li>
-                    <li><a href="faq.html" class="sidebar-link"><i class="bi bi-patch-question me-3"></i>FAQ</a></li>
-                    <li><a href="contacts.html" class="sidebar-link"><i class="bi bi-card-list me-3"></i>Контакты</a>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-stars me-3"></i>Отзывы</a></li>
+                    <li><a href="./faq.html" class="sidebar-link"><i class="bi bi-patch-question me-3"></i>FAQ</a></li>
+                    <li><a href="./contacts.html" class="sidebar-link"><i class="bi bi-card-list me-3"></i>Контакты</a>
                     </li>
                 </ul>
 
@@ -90,8 +90,61 @@
         </div>
     </header>
 
-    <main>
-        <!-- Основной контент страницы -->
+    <main class="container-fluid">
+        <section id="Реклама" class="container-fluid mb-4">
+            <div class="row justify-content-center">
+                <!-- Левая колонка: статичное большое изображение -->
+                <div class="col-md-6 mb-3">
+                    <img src="./assets/img/promo0.png" alt="Специальное предложение"
+                        class="img-fluid w-100 h-100 rounded-3 shadow-sm object-fit-cover border">
+                </div>
+
+                <!-- Правая колонка: карусель с акциями -->
+                <div class="col-md-6">
+                    <!-- Bootstrap карусель -->
+                    <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Индикаторы слайдов -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Слайд 1"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"
+                                aria-label="Слайд 2"></button>
+                            <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"
+                                aria-label="Слайд 3"></button>
+                        </div>
+
+                        <!-- Контейнер слайдов -->
+                        <div class="carousel-inner rounded-3 shadow-sm">
+                            <!-- Слайды (интервал автосмены - 1.5 сек) -->
+                            <div class="carousel-item active" data-bs-interval="1500">
+                                <img src="./assets/img/promo1.png" class="d-block w-100"
+                                    alt="Акция 1">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                                <img src="./assets/img/promo2.png" class="d-block w-100"
+                                    alt="Акция 2">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1500">
+                                <img src="./assets/img/promo3.png" class="d-block w-100"
+                                    alt="Акция 3">
+                            </div>
+                        </div>
+
+                        <!-- Кнопки переключения слайдов -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

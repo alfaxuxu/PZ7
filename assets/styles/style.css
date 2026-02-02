@@ -65,6 +65,7 @@ header {
     border-radius: 8px;
     transition: all 0.3s ease;
     font-size: 16px;
+    margin-right: 5px;
 }
 
 .sidebar-link:hover {
@@ -87,7 +88,7 @@ header {
     right: 30px;
     width: 50px;
     height: 50px;
-    background-color: rgb(32, 84, 228);
+    background-color: #0d6efd;
     color: white;
     border: none;
     border-radius: 50%;
@@ -111,7 +112,7 @@ header {
 }
 
 .scroll-to-top:hover {
-    background-color: rgb(37, 25, 176);
+    background-color: #0b5ed7;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
@@ -119,3 +120,4 @@ header {
 .scroll-to-top:active {
     transform: translateY(0);
 }
+
