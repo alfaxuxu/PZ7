@@ -121,3 +121,20 @@ header {
     transform: translateY(0);
 }
 
+/*-------------------------------------------------------------------*/
+/* Стили для карточек категорий */
+.hover-shadow:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.category-card {
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .category-card .card-title {
+        font-size: 1rem !important;
+    }
+}

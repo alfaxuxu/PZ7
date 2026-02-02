@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +55,8 @@
                     <li><a href="./404.html" class="sidebar-link"><i class="bi bi-phone me-3"></i>Смартфоны</a></li>
                     <li><a href="./404.html" class="sidebar-link"><i class="bi bi-tablet me-3"></i>Планшеты</a></li>
                     <li><a href="./404.html" class="sidebar-link"><i class="bi bi-laptop me-3"></i>Ноутбуки</a></li>
-                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a>
+                    </li>
                     <li><a href="./404.html" class="sidebar-link"><i class="bi bi-headset me-3"></i>Периферия</a></li>
                     <li><a href="./404.html" class="sidebar-link"><i class="bi bi-controller me-3"></i>Для геймеров</a>
                     </li>
@@ -91,6 +93,7 @@
     </header>
 
     <main class="container-fluid">
+        <!-- Секция "Акции" -->
         <section id="Реклама" class="container-fluid mb-4">
             <div class="row justify-content-center">
                 <!-- Левая колонка: статичное большое изображение -->
@@ -117,16 +120,13 @@
                         <div class="carousel-inner rounded-3 shadow-sm">
                             <!-- Слайды (интервал автосмены - 1.5 сек) -->
                             <div class="carousel-item active" data-bs-interval="1500">
-                                <img src="./assets/img/promo1.png" class="d-block w-100"
-                                    alt="Акция 1">
+                                <img src="./assets/img/promo1.png" class="d-block w-100" alt="Акция 1">
                             </div>
                             <div class="carousel-item" data-bs-interval="1500">
-                                <img src="./assets/img/promo2.png" class="d-block w-100"
-                                    alt="Акция 2">
+                                <img src="./assets/img/promo2.png" class="d-block w-100" alt="Акция 2">
                             </div>
                             <div class="carousel-item" data-bs-interval="1500">
-                                <img src="./assets/img/promo3.png" class="d-block w-100"
-                                    alt="Акция 3">
+                                <img src="./assets/img/promo3.png" class="d-block w-100" alt="Акция 3">
                             </div>
                         </div>
 
@@ -145,6 +145,85 @@
                 </div>
             </div>
         </section>
+
+        <!-- Секция "Категории товаров" -->
+        <section id="Категории" class="container-fluid mb-5">
+            <h2 class="mb-4">Категории</h2>
+            <!-- Сетка категорий (адаптивная: 2 -> 3 -> 6 колонок) -->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-4">
+                <!-- Карточка категории 1: Смартфоны -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-phone fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark text-nowrap">Смартфоны</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Карточка категории 2: Планшеты -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-tablet fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark">Планшеты</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Карточка категории 3: Ноутбуки -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark">Ноутбуки</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Карточка категории 4: ПК -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-pc-display fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark">ПК</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Карточка категории 5: Периферия -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark text-nowrap">Периферия</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Карточка категории 6: Для геймеров -->
+                <div class="col">
+                    <a href="404.html" class="text-decoration-none">
+                        <div class="category-card card h-100 hover-shadow">
+                            <div class="card-body text-center">
+                                <i class="bi bi-controller fs-1 text-primary mb-3"></i>
+                                <h5 class="card-title text-dark">Для геймеров</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -160,4 +239,5 @@
     <script src="./assets/scripts/menu.js"></script>
 
 </body>
+
 </html>
