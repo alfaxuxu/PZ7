@@ -138,3 +138,166 @@ header {
         font-size: 1rem !important;
     }
 }
+
+/*-------------------------------------------------------------------*/
+/* Стили для карусели товаров */
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Стили для карточек товаров */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.product-card {
+    flex: 0 0 calc(100% / 4 - 15px);
+    min-width: 250px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #f8f9fa;
+    display: block;
+    padding: 0;
+}
+
+.product-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* Стили для кнопки "Добавить в избранное" */
+.btn-favorite {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-favorite:hover {
+    background: #fff0f0;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.btn-favorite.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+    color: white;
+}
+
+.btn-favorite.active:hover {
+    background: #ff5252;
+}
+
+.btn-favorite:active {
+    background-color: white !important;
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+}
+
+/* Стили для кнопок "вперед", "назад" */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: #f8f9fa;
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.carousel-btn-prev {
+    left: 15px;
+}
+
+.carousel-btn-next {
+    right: 15px;
+}
+
+/* Ссылка "Все товары" */
+.btn-link.text-decoration-none {
+    color: #0d6efd;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-link.text-decoration-none:hover {
+    color: #0b5ed7;
+    transform: translateX(3px);
+}
+
+/* 3 карточки для экранов меньше 1200px */
+@media (max-width: 1199.98px) {
+    .product-card {
+        flex: 0 0 calc(33.333% - 13.33px);
+    }
+}
+
+/* 2 карточки для экранов меньше 992px */
+@media (max-width: 991.98px) {
+    .product-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+/* 1 карточка для экранов меньше 576px */
+@media (max-width: 575.98px) {
+    .carousel-container {
+        padding: 0 20px;
+    }
+
+    .product-card {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+}

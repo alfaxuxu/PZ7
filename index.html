@@ -224,6 +224,70 @@
                 </div>
             </div>
         </section>
+
+        <!-- Секция "Новинки" -->
+        <section id="Новинки" class="container-fluid mb-5">
+            <!-- Заголовок и ссылка "Все товары" -->
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h2>Новинки</h2>
+                <!-- Ссылка на страницу со всеми товарами -->
+                <a href="./404.html" class="btn btn-link text-decoration-none">
+                    Все товары <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Контейнер для карусели -->
+            <div class="position-relative">
+                <!-- Кнопка "назад" для прокрутки карусели -->
+                <button class="carousel-btn carousel-btn-prev" onclick="moveSlide(-1, 'new')">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <!-- Дорожка карусели, где будут динамически добавляться карточки товаров -->
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="cardsTrack">
+                        <!-- Карточки будут добавлены через JS -->
+                    </div>
+                </div>
+
+                <!-- Кнопка "вперед" для прокрутки карусели -->
+                <button class="carousel-btn carousel-btn-next" onclick="moveSlide(1, 'new')">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция "Популярное" -->
+        <section id="Популярное" class="container-fluid mb-5">
+            <!-- Заголовок и ссылка "Все товары" -->
+            <div class="d-flex justify-content-between align-items-baseline mb-4">
+                <h2>Популярное</h2>
+                <!-- Ссылка на страницу со всеми товарами -->
+                <a href="./404.html" class="btn btn-link text-decoration-none">
+                    Все товары <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Контейнер для карусели -->
+            <div class="position-relative">
+                <!-- Кнопка "назад" для прокрутки карусели -->
+                <button class="carousel-btn carousel-btn-prev" onclick="moveSlide(-1, 'popular')">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <!-- Дорожка карусели, где будут динамически добавляться карточки товаров -->
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="popularTrack">
+                        <!-- Карточки будут добавлены через JS -->
+                    </div>
+                </div>
+
+                <!-- Кнопка "вперед" для прокрутки карусели -->
+                <button class="carousel-btn carousel-btn-next" onclick="moveSlide(1, 'popular')">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -237,6 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Собственные скрипты -->
     <script src="./assets/scripts/menu.js"></script>
+    <script src="./assets/scripts/carousel.js"></script>
 
 </body>
 
