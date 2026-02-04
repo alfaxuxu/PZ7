@@ -61,7 +61,7 @@ function initCarousel(trackId, carouselType = 'new') {
                     <div class="card-price product-price mb-3">${card.price}</div>
                     <div class="d-flex gap-2 mt-auto">
                         <!-- Кнопка "Избранное" с динамическим классом active -->
-                        <button class="btn btn-outline-primary btn-favorite ${cardsData[originalIndex].isFavorite ? 'active' : ''}" 
+                        <button class="btn-favorite ${cardsData[originalIndex].isFavorite ? 'active' : ''}" 
                                 onclick="toggleFavorite(${originalIndex})">
                             <i class="bi bi-heart"></i>
                         </button>
