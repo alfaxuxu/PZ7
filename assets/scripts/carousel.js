@@ -7,7 +7,7 @@ const cardsData = [
     { image: './assets/img/photo4.jpg', title: 'Смартфон Samsung Galaxy S24', price: '89 990 ₽', isFavorite: false, inCart: false },
     { image: './assets/img/photo5.jpg', title: 'Ноутбук Lenovo Yoga Slim 7', price: '79 990 ₽', isFavorite: false, inCart: false},
     { image: './assets/img/photo6.jpg', title: 'Планшет Apple iPad Air (5 gen)', price: '74 990 ₽', isFavorite: false, inCart: false},
-    { image: './assets/img/photo7.png', title: 'Веб-камера Logitech Brio 4K', price: '16 990 ₽', isFavorite: false, inCart: false },
+    { image: './assets/img/photo7.jpg', title: 'Веб-камера Logitech Brio 4K', price: '16 990 ₽', isFavorite: false, inCart: false },
     { image: './assets/img/photo8.jpg', title: 'Игровой ПК HYPERPC X600', price: '189 990 ₽', isFavorite: false, inCart: false }
 ];
 

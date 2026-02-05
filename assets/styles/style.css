@@ -352,3 +352,19 @@ footer .bi-youtube:hover {
 footer .border-top {
     border-color: #dee2e6;
 }
+
+/*-------------------------------------------------------------------*/
+/* Стили для 404.html */
+.error-code {
+    font-size: 5rem;
+}
+
+.btn-custom {
+    min-width: 160px;
+}
+
+@media (min-width: 768px) {
+    .error-code {
+        font-size: 7rem;
+    }
+}
