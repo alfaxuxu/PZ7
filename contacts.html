@@ -225,6 +225,68 @@
                 </div>
             </div>
         </section>
+
+        <!-- Секция "Обратная связь" -->
+        <section id="Связаться_с_нами" class="container-fluid mb-5">
+            <h2 class="mb-4">Связаться с нами</h2>
+            <!-- Контактная форма -->
+            <form class="row col-lg-8 col-xl-6">
+                <!-- Имя -->
+                <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Электронная почта</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                </div>
+
+                <!-- Тема -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label fw-semibold">Тема обращения</label>
+                    <select class="form-select" id="subject">
+                        <option selected disabled>Выберите тему...</option>
+                        <option value="order">Вопрос по заказу</option>
+                        <option value="delivery">Доставка и самовывоз</option>
+                        <option value="product">Вопрос о товаре</option>
+                        <option value="return">Возврат и обмен</option>
+                        <option value="warranty">Гарантия и ремонт</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+
+                <!-- Сообщение -->
+                <div class="mb-3">
+                    <label for="message" class="form-label fw-semibold">Вопросы / комментарии</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="Опишите ваш вопрос или комментарий..."></textarea>
+                </div>
+
+                <!-- Согласие на обработку персональных данных -->
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                        <label class="form-check-label" for="privacyPolicy">
+                            Я согласен на обработку моих персональных данных в соответствии с
+                            <a href="./404.html" class="text-decoration-none" target="_blank">
+                                политикой конфиденциальности
+                            </a>
+                        </label>
+                        <div class="invalid-feedback">
+                            Необходимо согласиться с обработкой персональных данных
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кнопка отправки -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    <button type="reset" class="btn btn-outline-secondary">Очистить форму</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="bg-light pt-3 pb-4 border-top">
