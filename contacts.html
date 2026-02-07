@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркетплейс электроники</title>
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Стили сайта -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="container-fluid py-3 mb-4">
+        <div class="row g-2">
+            <!-- Логотип -->
+            <div class="col-6 col-md-auto ">
+                <a href="./index.html" class="logo-link">
+                    <img src="./assets/img/Logo.png" width="150" alt="Логотип">
+                </a>
+            </div>
+
+            <!-- Кнопки избранное, корзина, аккаунт - скрыты на десктопе, видны на мобильных-->
+            <div class="col-6 col-md-auto d-md-none d-flex justify-content-end">
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-heart"></i>
+                </a>
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-bag"></i>
+                </a>
+                <a href="./404.html" class="btn btn-sm d-flex align-items-center">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </div>
+
+            <!-- Каталог и поиск -->
+            <div class="dropdown col-12 col-md d-flex">
+                <!-- Кнопка каталога с бургер-меню -->
+                <button id="menuToggle" class="catalog-btn btn btn-primary d-flex align-items-center gap-2 me-3"
+                    data-bs-toggle="dropdown">
+                    <span class="hamburger-icon d-flex flex-column me-1">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                    <span>Каталог</span>
+                </button>
+
+                <!-- Выпадающее меню каталога -->
+                <ul class="dropdown-menu">
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-phone me-3"></i>Смартфоны</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-tablet me-3"></i>Планшеты</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-laptop me-3"></i>Ноутбуки</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-pc-display me-3"></i>Компьютеры</a>
+                    </li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-headset me-3"></i>Периферия</a></li>
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-controller me-3"></i>Для геймеров</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <!-- Дополнительные ссылки -->
+                    <li><a href="./404.html" class="sidebar-link"><i class="bi bi-stars me-3"></i>Отзывы</a></li>
+                    <li><a href="./faq.html" class="sidebar-link"><i class="bi bi-patch-question me-3"></i>FAQ</a></li>
+                    <li><a href="./contacts.html" class="sidebar-link"><i class="bi bi-card-list me-3"></i>Контакты</a>
+                    </li>
+                </ul>
+
+                <!-- Поле поиска -->
+                <div class="input-group w-100">
+                    <input type="search" class="form-control" placeholder="Найти...">
+                    <button class="btn btn-outline-secondary " type="button"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+
+            <!-- Кнопки избранное, корзина, аккаунт - скрыты на мобильных, видны на десктопе -->
+            <div class="col-md-auto d-none d-md-flex">
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-heart"></i>
+                </a>
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-bag"></i>
+                </a>
+                <a href="./404.html" class="btn">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <!-- Секция "Адреса магазинов и ПВЗ" -->
+        <section class="container-fluid mb-5">
+            <h2 class="mb-4">Адреса магазинов и ПВЗ</h2>
+            <div class="row g-2">
+                <!-- Левая колонка: Поиск + список магазинов -->
+                <div class="col-md-6">
+                    <!-- Поиск -->
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Введите город или адрес...">
+                            <!--<button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>-->
+                            <button class="btn btn-primary" type="button">Найти</i></button>
+                        </div>
+                    </div>
+
+                    <!-- Список магазинов со скроллом -->
+                    <div class="card" style="height: calc(470px - 60px);"> <!-- 600px минус высота поиска -->
+                        <div class="card-header bg-light">
+                            <p class="h5 mb-0">Список магазинов</p>
+                        </div>
+                        <div class="store-list-scroll" style="height: calc(100% - 56px); overflow-y: auto;">
+                            <!-- Высота 100% минус высота заголовка -->
+                            <!-- Магазин 1 -->
+                            <div class="card border-0 rounded-0 border-bottom">
+                                <div class="card-body">
+                                    <p class="card-title h5">Магазин на Тверской</p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-geo-alt text-primary me-1"></i>
+                                        г. Москва, ул. Тверская, д. 15
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-clock text-primary me-1"></i>
+                                        Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-20:00
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        <i class="bi bi-telephone text-primary me-1"></i>
+                                        +7 (495) 123-45-67
+                                    </p>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Магазин</span>
+                                        <span class="badge bg-success">Самовывоз</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Магазин 2 -->
+                            <div class="card border-0 rounded-0 border-bottom">
+                                <div class="card-body">
+                                    <p class="card-title h5">ПВЗ на Арбате</p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-geo-alt text-primary me-1"></i>
+                                        г. Москва, ул. Арбат, д. 32
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-clock text-primary me-1"></i>
+                                        Ежедневно: 10:00-22:00
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        <i class="bi bi-telephone text-primary me-1"></i>
+                                        +7 (495) 765-43-21
+                                    </p>
+                                    <div class="mb-2">
+                                        <span class="badge bg-secondary">ПВЗ</span>
+                                        <span class="badge bg-success">Самовывоз</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Магазин 3 -->
+                            <div class="card border-0 rounded-0 border-bottom">
+                                <div class="card-body">
+                                    <p class="card-title h5">Магазин в ТЦ "Авиапарк"</p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-geo-alt text-primary me-1"></i>
+                                        г. Москва, Ходынский бульвар, д. 4
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-clock text-primary me-1"></i>
+                                        Пн-Вс: 10:00-22:00
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        <i class="bi bi-telephone text-primary me-1"></i>
+                                        +7 (495) 987-65-43
+                                    </p>
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary">Магазин</span>
+                                        <span class="badge bg-success">Самовывоз</span>
+                                        <span class="badge bg-danger">Акции</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Магазин 4 -->
+                            <div class="card border-0 rounded-0 border-bottom">
+                                <div class="card-body">
+                                    <p class="card-title h5">ПВЗ на Проспекте Мира</p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-geo-alt text-primary me-1"></i>
+                                        г. Москва, Проспект Мира, д. 89
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-clock text-primary me-1"></i>
+                                        Пн-Пт: 8:00-20:00, Сб: 9:00-18:00
+                                    </p>
+                                    <p class="card-text mb-2">
+                                        <i class="bi bi-telephone text-primary me-1"></i>
+                                        +7 (495) 456-78-90
+                                    </p>
+                                    <div class="mb-2">
+                                        <span class="badge bg-secondary">ПВЗ</span>
+                                        <span class="badge bg-success">Самовывоз</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: Карта -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header bg-light">
+                            <p class="h5 mb-0">Карта магазинов</p>
+                        </div>
+                        <div class="card-body p-0">
+                            <!-- Яндекс.Карта -->
+                            <div id="map" style="width: 100%; height: calc(470px - 56px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light pt-3 pb-4 border-top">
+        <div class="container">
+            <!-- Основная секция с колонками -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mb-5">
+                <!-- Колонка 1: Мобильное приложение -->
+                <div class="col">
+                    <div class="text-center h-100">
+                        <i class="bi bi-qr-code text-dark mb-3" style="font-size: 5rem;"></i>
+                        <p class="fw-bold mb-1 fs-5">В приложении удобнее!</p>
+                        <p class="text-muted small mb-3">Скачивайте для быстрых покупок</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <a href="./404.html" class="btn btn-outline-dark btn-sm">
+                                <i class="bi bi-apple me-1"></i> App Store
+                            </a>
+                            <a href="./404.html" class="btn btn-outline-dark btn-sm">
+                                <i class="bi bi-google-play me-1"></i> Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Покупателям -->
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="fw-bold mb-3 fs-5">Покупателям</p>
+                    <ul class="list-unstyled mb-0 text-start">
+                        <li class="mb-2"><a href="./faq.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-patch-question me-2"></i>Частые вопросы</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-truck me-2"></i>Доставка и оплата</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-arrow-return-left me-2"></i>Возврат и обмен</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-shield-check me-2"></i>Гарантия</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Компания -->
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="fw-bold mb-3 fs-5">Компания</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-info-circle me-2"></i>О нас</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-newspaper me-2"></i>Новости</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-briefcase me-2"></i>Вакансии</a></li>
+                        <li class="mb-2"><a href="./404.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-file-text me-2"></i>Документы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 4: Контакты -->
+                <div class="col d-flex flex-column align-items-center">
+                    <p class="fw-bold mb-3 fs-5">Контакты</p>
+                    <ul class="list-unstyled ">
+                        <li class="mb-2"><a href="tel:+78001234567" class="text-dark text-decoration-none"><i
+                                    class="bi bi-telephone me-2"></i>8 (800) 123-45-67</a></li>
+                        <li class="mb-2"><a href="mailto:support@mycompany.com"
+                                class="text-dark text-decoration-none"><i
+                                    class="bi bi-envelope me-2"></i>help@mycompany.ru</a></li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>Пн-Пт: 9:00-21:00</li>
+                        <li class="mb-2"><a href="./contacts.html" class="text-dark text-decoration-none"><i
+                                    class="bi bi-shop me-2"></i>Адреса магазинов</a></li>
+                    </ul>
+                    <div class="d-flex gap-3 ">
+                        <a href="./404.html" class="text-dark fs-4"><i class="bi bi-telegram"></i></a>
+                        <a href="./404.html" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="./404.html" class="text-dark fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Нижняя секция -->
+            <div class="row mt-4 pt-4 border-top">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/Logo.png" width="120" alt="Логотип" class="me-3">
+                        <span class="text-muted">© 2026 Маркетплейс электроники. Все права защищены.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-wrap justify-content-md-end align-items-center gap-3">
+                        <a href="./404.html" class="text-muted text-decoration-none">Политика конфиденциальности</a>
+                        <a href="./404.html" class="text-muted text-decoration-none">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка прокрутки наверх -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">↑</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Собственные скрипты -->
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
+    <script src="./assets/scripts/map.js" type="text/javascript"></script>
+
+</body>
+
+</html>
