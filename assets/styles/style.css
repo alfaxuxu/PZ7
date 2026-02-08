@@ -368,3 +368,10 @@ footer .border-top {
         font-size: 7rem;
     }
 }
+
+/*-------------------------------------------------------------------*/
+/* Стили для выпадающих FAQ */
+.accordion-button {
+    background-color: transparent !important;
+    color: #212529;
+}
