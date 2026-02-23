@@ -230,11 +230,17 @@
         <section id="Связаться_с_нами" class="container-fluid mb-5">
             <h2 class="mb-4">Связаться с нами</h2>
             <!-- Контактная форма -->
-            <form class="row col-lg-8 col-xl-6">
+            <form id="feedbackForm" class="row col-lg-8 col-xl-6">
                 <!-- Имя -->
                 <div class="mb-3">
-                    <label for="name" class="form-label fw-semibold">Ваше имя</label>
+                    <label for="name" class="form-label fw-semibold">Имя</label>
                     <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+                </div>
+
+                <!-- Телефон -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label fw-semibold">Телефон</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+7 999 999 99 99">
                 </div>
 
                 <!-- Email -->
@@ -259,7 +265,7 @@
 
                 <!-- Сообщение -->
                 <div class="mb-3">
-                    <label for="message" class="form-label fw-semibold">Вопросы / комментарии</label>
+                    <label for="message" class="form-label fw-semibold">Сообщение</label>
                     <textarea class="form-control" id="message" rows="4"
                         placeholder="Опишите ваш вопрос или комментарий..."></textarea>
                 </div>
@@ -274,9 +280,6 @@
                                 политикой конфиденциальности
                             </a>
                         </label>
-                        <div class="invalid-feedback">
-                            Необходимо согласиться с обработкой персональных данных
-                        </div>
                     </div>
                 </div>
 
@@ -388,6 +391,8 @@
     <script src="./assets/scripts/menu.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU" type="text/javascript"></script>
     <script src="./assets/scripts/map.js" type="text/javascript"></script>
+    <script src="./assets/scripts/validation.js"></script>
+    <script src="./assets/scripts/consoleLogger.js"></script>
 
 </body>
 
